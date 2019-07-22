@@ -78,9 +78,11 @@ stages:
       displayName: 'NuGet push'    
       condition: eq(variables['PushPackage'], true)
       inputs:
-        command: 'push'
-        nuGetFeedType: 'external'
-        packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-        publishFeedCredentials: 'Nuget official'
+        command: 'custom'
+        custom: nuget
+        arguments: >
+          push $(Build.ArtifactStagingDirectory)/*.nupkg
+          -s $(NuGetSourceServerUrl)
+          -k $(NuGetSourceServerApiKey)
         
 #    - task: PublishBuildArtifacts@1
