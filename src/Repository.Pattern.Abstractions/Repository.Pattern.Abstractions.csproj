@@ -2,17 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    	
     <Authors>Alvaro Montero Gonzalez</Authors>
-    <owners>Alvaro Montero Gonzalez</owners>
-    <licenseUrl>https://github.com/alvaromongon/Repository.Pattern.Abstractions/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/alvaromongon/Repository.Pattern.Abstractions</projectUrl>
-    <iconUrl>https://www.nuget.org/Content/gallery/img/default-package-icon.svg</iconUrl>
+    <owners>Alvaro Montero Gonzalez</owners>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Repository pattern abstractions.</description>
-    <releaseNotes>First Release.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
-    <PackageTags>netstandard repository-pattern</PackageTags>
-    <tags>netstandard repository-pattern</tags>
+    <Description>Repository pattern abstractions.</Description>    
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://www.nuget.org/Content/gallery/img/default-package-icon.svg</PackageIconUrl>
+    <PackageReleaseNotes>First Release.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/alvaromongon/Repository.Pattern.Abstractions</RepositoryUrl>
+    
+	<PackageTags>netstandard repository-pattern</PackageTags>
   </PropertyGroup>
 
 </Project>
