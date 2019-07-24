@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    	
+
+    <PackageId>amg.Repository.Pattern.Abstractions</PackageId>
+    <Title>amg.Repository.Pattern.Abstractions</Title>    	
     <Authors>Alvaro Montero Gonzalez</Authors>
     <owners>Alvaro Montero Gonzalez</owners>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
