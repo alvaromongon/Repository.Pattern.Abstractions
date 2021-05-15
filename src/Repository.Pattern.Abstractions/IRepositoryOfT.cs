@@ -1,10 +1,10 @@
-﻿using Repository.Pattern.Abstractions.Batches;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Repository.Pattern.Abstractions.Batches;
 
 namespace Repository.Pattern.Abstractions
 {
-    public interface IRepository<TDomainModel> where TDomainModel : class, new()
+    public interface IRepository<TDomainModel> where TDomainModel : class, IDomainModel, new()
     {
         Task<IEnumerable<TDomainModel>> GetAllAsync();
 
@@ -18,12 +18,12 @@ namespace Repository.Pattern.Abstractions
 
         Task<TDomainModel> AddOrUpdateAsync(TDomainModel domainModel);
 
-        Task<TDomainModel> UpdateAsync(TDomainModel domainModel);        
+        Task<TDomainModel> UpdateAsync(TDomainModel domainModel);
 
         Task DeleteAllAsync(string partitionKey);
 
         Task<TDomainModel> DeleteAsync(TDomainModel domainModel);
 
         Task<TDomainModel> DeleteAsync(string partitionKey, string rowKey);
-    }        
+    }
 }
